@@ -13,15 +13,17 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
-# HINTS
-# Get a random number between 1 and 6 by doing:
-# rand(1..6)
-# Log output to the screen with puts, e.g.
-# puts "Hello"
-# You can add two strings together, or two numbers, but
-# not a string and a number; e.g. this will cause an error:
-# "i would like " + 5 + " tacos"
-# To rectify this, you can convert the number into a string
-# "i would like #{5} tacos"
-# We can specify multiple conditions with || (OR) and && (AND)
-# if dinner == "tacos" || dinner == "pizza"
+dice1 = rand(1..6)
+dice2 = rand(1..6)
+total = dice1 + dice2
+
+puts dice1 
+puts dice2 
+
+if total == 7 || total == 11 #if total is 7 or 11, you win
+    puts "YOU WIN!"
+elsif total == 2 || total == 3 || total == 12
+    puts "YOU LOSE!" # if total is 2, 3, or 12, you lose
+else 
+    puts "The POINT IS #{total}" #otherwise, the point is set
+end
