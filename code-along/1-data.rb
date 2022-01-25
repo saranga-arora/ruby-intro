@@ -44,3 +44,11 @@ puts greeting
 puts greeting1 
 
 # String manipulation
+puts "Hello".reverse #prints olleH
+puts "hello how are you".capitalize #capitalizes first letter of string, and downcases everything else
+puts "Hello How Are You".capitalize 
+puts "hello".length #prints length of letter
+
+creed = "This Is the Way"
+puts creed.upcase #all uppercase
+puts creed.downcase #all lowercase 
