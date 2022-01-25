@@ -11,12 +11,15 @@
 # as well.
 
 # HINTS
-# Get a random number between 1 and 6 by doing:
-# rand(1..6)
-# Log output to the screen with puts, e.g.
-# puts "Hello"
-# You can add two strings together, or two numbers, but
-# not a string and a number; e.g. this will cause an error:
-# "i would like " + 5 + " tacos"
-# To rectify this, you can convert the number into a string
-# "i would like #{5} tacos"
+# Get a random number between 1 and 6 by doing: rand(1..6)
+
+dice1 = rand(1..6)
+dice2 = rand(1..6)
+total = dice1 + dice2
+
+puts dice1 
+puts dice2 
+
+puts "The first dice value is #{dice1}."
+puts "The second dice value is #{dice2}."
+puts "The sum is #{total}."
